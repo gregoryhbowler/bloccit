@@ -43,8 +43,18 @@
  # end
 
 
+ # p = Post.find_or_create_by(
+ #  title: "Blade Runner", 
+ #  body: "Do Androids Dream of Electric Sheep?"
+ # )
+
+ # c = Comment.find_or_create_by(
+ #  post: p,
+ #  body: "which one is better?"
+ # )
+
  1.times do
-  postExist = Post.find_by title: 'title'
+  postExist = Post.find_by title: 'Blade Runner'
   if postExist.nil?
     Post.create!(
   title: "Blade Runner",
@@ -56,7 +66,7 @@ end
 posts = Post.all
 
 1.times do
-  commentExist = Comment.find_by body: 'comment'
+  commentExist = Comment.find_by body: 'which one is better?'
   if commentExist.nil?
  Comment.create!(
     post: posts.sample,
