@@ -26,9 +26,15 @@
       <%= f.label :resolved %>
       <%= f.check_box :resolved %>
     </div>
-    <div class="form-group"> 
+<!--    <div class="form-group"> 
         <%= f.submit "Delete", class: 'btn btn-success' %>
+    </div>!-->
+
     </div>
+<!--     <%= link_to "Destroy", @question, method: :destroy, class: 'btn btn-danger' %>
+    </div> !-->
+
+<%= link_to "Delete", @question, method: :delete, class: 'btn btn-danger' %>
 
 <!-- This is where the delete button should go !-->
 
