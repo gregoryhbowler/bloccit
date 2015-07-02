@@ -5,6 +5,6 @@ class Post < ActiveRecord::Base
   posts = Post.all
 
   default_scope { order('created_at DESC') }
-  scope :ordered_by_title, -> { order(title: :asc) }
-  scope :ordered_by_reverse_created_at, -> { posts.order('created_at DESC').reverse }
+  scope :ordered_by_title, -> { reorder(title: :asc) }
+  scope :ordered_by_reverse_created_at, -> { reorder('created_at ASC') }
 end
