@@ -78,6 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #Bloccit App
-  config.action_mailer.default_url_options = { host: 'gregbloccit.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'gregbloccit.herokuapp.com/' }
 
 end
