@@ -1,5 +1,7 @@
 <h1><%= markdown_to_html @post.title %></h1>
 
+<%= image_tag(@post.image.url(:medium) if @post.image?) %>
+
 <div class="row">
   <div class="col-md-8">
   <small>
