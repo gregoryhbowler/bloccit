@@ -41,6 +41,9 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  
 end
 
 group :development, :test do
@@ -71,3 +74,4 @@ gem 'mini_magick'
 gem 'fog'
 
 gem 'will_paginate', '~> 3.0.5'
+
