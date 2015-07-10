@@ -21,7 +21,10 @@
     <% @post.comments.each do |comment| %>
       <%= render comment %>
     <% end %>
-    <%= render partial: "comments/form", locals: {topic: @topic, post: @post, comment: Comment.new} %>
+    
+    <% if policy(Comment.new).new? %>
+      <%= render partial: "comments/form", locals: {topic: @topic, post: @post, comment: Comment.new} %>
+    <% end %>
   </div>
 
 </div>
