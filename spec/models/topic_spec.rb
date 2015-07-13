@@ -1,3 +1,5 @@
+# May need to delete this from the checkpoint if it's important for the overall app
+
 require 'rails_helper'
 
 describe Topic do
