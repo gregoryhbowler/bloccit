@@ -30,12 +30,11 @@ class Post < ActiveRecord::Base
   end
 
   def save_with_initial_vote
-    #Utilizing ActiveRecord::Base.trasaction do
-    self.save
-      if valid?
-          create_vote
-        end
-      end
+    ActiveRecord::Base.transaction do
+      self.save!
+      create_vote
+    end
+  end
 
     
 
