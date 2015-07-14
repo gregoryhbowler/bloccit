@@ -30,7 +30,7 @@
   </div>
   <div class="col-md-8">
     <% @post.comments.each do |comment| %>
-      <%= render comment %>
+      <%= render partial: 'comments/comment', collection: @comments %>
     <% end %>
     
     <% if policy(Comment.new).new? %>
