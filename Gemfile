@@ -79,3 +79,6 @@ gem 'will_paginate', '~> 3.0.5'
 
 gem 'capybara'
 
+gem 'newrelic_rpm'
+
+
