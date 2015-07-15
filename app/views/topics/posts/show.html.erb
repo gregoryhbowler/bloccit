@@ -1,5 +1,3 @@
-
-
 <div class="row">
   <div class="col-md-8">
     <%= render partial: 'votes/voter', locals: { post: @post } %>
@@ -29,10 +27,14 @@
     
   </div>
   <div class="col-md-8">
-      <%= render partial: 'comments/comment', collection: @comments %>
-    <% if policy(Comment.new).new? %>
-      <%= render partial: "comments/form", locals: {topic: @topic, post: @post, comment: Comment.new} %>
-    <% end %>
+    <h2>Comments</h2>
+      <div class='js-comments'.>
+        <%= render partial: 'comments/comment', collection: @comments %>
+      </div>
+        <div class='new-comment'>
+        <%= render 'comments/form', post: @post, comment: @comment %>
+        </div>
   </div>
+ 
 
 </div>
