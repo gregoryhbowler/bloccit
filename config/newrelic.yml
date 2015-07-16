@@ -5,14 +5,14 @@
 #
 # Generated July 16, 2015
 # 
-# This configuration file is custom generated for brud
+# This configuration file is custom generated for app38206140@heroku.com
 #
 # For full documentation of agent configuration options, please refer to
 # https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: 2f392213a8bc97be38e5a6ae5d0a721518318c6f
+  license_key: 0db24f0c69779541502a958f26a8b5b11853fb1e
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
