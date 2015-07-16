@@ -43,7 +43,7 @@ group :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
-  
+
 end
 
 group :development, :test do
@@ -81,3 +81,4 @@ gem 'will_paginate', '~> 3.0.5'
 
 gem 'factory_girl_rails', '~> 4.0'
 
+gem 'newrelic_rpm'
