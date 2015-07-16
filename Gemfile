@@ -43,7 +43,7 @@ group :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
-  
+  gem 'annotate'
 end
 
 group :development, :test do
@@ -78,4 +78,3 @@ gem 'fog'
 gem 'will_paginate', '~> 3.0.5'
 
 gem 'capybara'
-
