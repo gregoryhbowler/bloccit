@@ -3,6 +3,11 @@
 <div class="row">
   <div class="col-md-8">
     <p><%= @post.body %></p>
+    <% if @post.summary %>
+      <%=  @post.summary.description %>
+    <% else %>
+      <%= link_to "Create Summary", new_topic_post_summary_path(@topic, @post), class: 'btn btn-success'%>
+    <% end %>
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>

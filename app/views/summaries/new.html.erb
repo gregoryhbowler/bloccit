@@ -1,5 +1,5 @@
 <h1>summary#new<h1>
-<%= form_for @summary, url: post_summary_path do |f| %>
+<%= form_for [@topic, @post, @summary] do |f| %>
    <%= f.label :description %>
    <%= f.text_area :description %>
    <%= f.submit "Save" %>

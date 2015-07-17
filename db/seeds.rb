@@ -59,7 +59,7 @@ end
  )
  admin.skip_confirmation!
  admin.save!
- 
+
  # Create a moderator
  moderator = User.new(
    name:     'Moderator User',
@@ -69,7 +69,7 @@ end
  )
  moderator.skip_confirmation!
  moderator.save!
- 
+
  # Create a member
  member = User.new(
    name:     'Member User',
@@ -82,4 +82,4 @@ end
 puts "Seed finished"
 puts "#{User.count} users created"
 puts "#{Post.count} posts created"
-puts "#{Comment.count} comments created" 
+puts "#{Comment.count} comments created"
